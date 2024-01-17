@@ -9,7 +9,22 @@
 <body>
     <!---->
     <div class="header-section">
-        <div class="header1"></div>
+        <div class="header1">
+            <div class="header1-1">
+                <h1>nav-bar</h1>
+            
+            <nav>
+                <a href="#" id="close">X</a>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">services</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <h3 id="open">Menu</h3>
+        </div>
+        <div class="header2"></div> 
+            </div>
+        </div>
         <div class="header2">
             <h1 class="title">Coaching for Managers and Executives </h1>
             <p>A FREE virtual class to help you become the leader your company needs you to be
@@ -76,5 +91,21 @@
   <footer>
     
   </footer>
+
+   <!--java-script-->
+   <script>
+    let nav = document.querySelector('nav');
+    let open = document.querySelector('#open');
+    let close = document.querySelector('#close')
+
+    open.addEventListener('click',function(){
+     nav.style.top='1px';
+    })
+
+    close.addEventListener('click',function(){
+     nav.style.top='-720px';
+    })
+ </script>
+
 </body>
 </html>
